@@ -1,16 +1,24 @@
 
 import { hydrateRoot } from 'react-dom/client';
 
-import { BrowserRouter } from 'react-router';
+import {
+    createBrowserRouter,
+    createRoutesFromElements,
+    RouterProvider
+} from 'react-router';
 import { Routing } from './routes';
 
 const root = document.getElementById('root');
 
 if (root) {
     hydrateRoot(root, (
-        <BrowserRouter>
-            <Routing />
-        </BrowserRouter>
+        <RouterProvider router={
+            createBrowserRouter(
+                createRoutesFromElements(
+                    Routing()
+                )
+            )
+        } />
     ));
 }
 
