@@ -1,4 +1,4 @@
-import {App} from "./src/App.tsx";
+import {App} from "./App.tsx";
 import {
   createRoutesFromElements,
   createStaticHandler,
@@ -7,11 +7,11 @@ import {
   type StaticHandlerContext,
 } from 'react-router';
 import { renderToReadableStream } from "react-dom/server";
-import { Routing } from "./src/routes.tsx";
+import { Routing } from "./routes.tsx";
 
 Bun.build({
     entrypoints: ['./src/client.tsx'],
-    outdir: 'public/'
+    outdir: 'src/public/'
 })
 
 const server = Bun.serve({
@@ -52,4 +52,4 @@ const server = Bun.serve({
     },
   });
 
-console.log(`Listening on http://localhost:${server.port}`);
+console.info(`Listening on http://localhost:${server.port}`);

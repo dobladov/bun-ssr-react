@@ -1,6 +1,6 @@
 {
   "name": "ssr-bun",
-  "module": "index.tsx",
+  "module": "src/index.tsx",
   "description": "An example of SSR with React and Bun",
   "type": "module",
   "author": {
@@ -8,7 +8,7 @@
     "email": "danieldoblado@gmail.com"
   },
   "scripts": {
-    "dev": "bun run --watch index.tsx"
+    "dev": "bun run --watch src/index.tsx"
   },
   "devDependencies": {
     "@types/bun": "latest",
