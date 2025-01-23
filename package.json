@@ -1,0 +1,26 @@
+{
+  "name": "ssr-bun",
+  "module": "index.tsx",
+  "description": "An example of SSR with React and Bun",
+  "type": "module",
+  "author": {
+    "name": "Daniel Doblado",
+    "email": "danieldoblado@gmail.com"
+  },
+  "scripts": {
+    "dev": "bun run --watch index.tsx"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "19.0.8",
+    "@types/react-dom": "19.0.3"
+  },
+  "peerDependencies": {
+    "typescript": "5.0.0"
+  },
+  "dependencies": {
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-router": "7.1.3"
+  }
+}
